@@ -56,12 +56,12 @@
       ]
     },
     {
-      "group": "Embeds",
+      "group": "Resources",
       "pages": [
-        "embeds/scripting",
-        "embeds/parameters",
-        "embeds/variables",
-        "embeds/colors"
+        "resources/scripting",
+        "resources/parameters",
+        "resources/variables",
+        "resources/colors"
       ]
     }
   ],
