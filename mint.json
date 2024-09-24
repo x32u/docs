@@ -61,7 +61,8 @@
         "resources/scripting",
         "resources/parameters",
         "resources/variables",
-        "resources/colors"
+        "resources/colors",
+        "resources/translations"
       ]
     }
   ],
