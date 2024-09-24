@@ -2,8 +2,8 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Evict",
   "logo": {
-    "dark": "/logo/evict.ico",
-    "light": "/logo/evict.ico"
+    "dark": "https://r2.evict.cc/evict.png",
+    "light": "https://r2.evict.cc/evict.png"
   },
   "favicon": "/logo/evict.svg",
   "colors": {
@@ -60,7 +60,8 @@
       "pages": [
         "embeds/scripting",
         "embeds/parameters",
-        "embeds/variables"
+        "embeds/variables",
+        "embeds/colors"
       ]
     }
   ],
