@@ -1,59 +1,62 @@
 ---
 title: 'Variables'
-description: 'You can learn about how to script embeds for commands that support this feature.'
+description: 'In this section, you will be able to view the variables that you can use for greeds embeds.'
 icon: 'code'
 ---
 
-## User Related Variables:
+# Base Variables
+Variables that can be used across a wide range of commands and invoke messages. 
 
-| Variable                             | Output                                        |
-| ------------------------------------ | --------------------------------------------- |
-| ``{user.name}``                      | Returns user name                             |
-| ``{user.mention}``                   | Mentions the user                             |
-| ``{user.id}``                        | Returns user ID                               |
-| ``{user.created_at}``                | Returns user creation date in timestamp format|
-| ``{user.joined_at}``                 | Returns user join date in timestamp format    |
+## Guild Variables
+Guild variables can be useful in areas such as welcome messages when displaying your overall member count & more.
 
-## Guild Related Variables:
+| Variable                        | Output                                    | Example                        |
+|----------------------------|-----------------------------------------|-------------------------------------- |
+| `{guild.name}`             | Shows guild's name                      | `My Discord Server`                   |
+| `{guild.icon}`             | Shows guild's icon                      | `https://r2.greed.best/greed.png`        |
+| `{guild.created_at}`       | Shows the date when the server was created | `2023-08-01`                       |
+| `{guild.count}`            | Shows the member count                  | `1,604`                                |
+| `{guild.boost_count}`      | Shows the number of boosts in the server | `34`                                 |
+| `{guild.booster_count}`    | Shows the number of boosters in the server | `10`                               |
+| `{guild.vanity}`           | Shows the server's vanity code if any    | `/greedbot`                           |
+| `{guild.boost_tier}`       | Shows the guild's boost level            | `Level 2`                            |
+| `{guild.count.format}`     | Shows the member count in the ordinal format | `1,500th`                        |
+| `{guild.boost_count.format}` | Shows the boosts count in ordinal format | `25th`                             |
+| `{guild.booster_count.format}` | Shows the boosters count in ordinal format | `10th`                         |
 
-| Variable                             | Output                                                 |
-| ------------------------------------ | ------------------------------------------------------ |
-| ``{guild.name}``                     | Returns guild name                                     |
-| ``{guild.icon}``                     | Returns guild icon                                     |   
-| ``{guild.count}``                    | Returns guild member count                             |
-| ``{guild.created_at}``               | Returns guild creation date in timestamp format        |
-| ``{guild.count.format}``             | Returns guild member count in ordinal format           |
-| ``{guild.boost_count}``              | Returns guild boost count                              |
-| ``{guild.boost_count.format}``       | Returns guild boost amount in ordinal format           |
-| ``{guild.booster_count}``            | Returns the amount of people boosting                  |
-| ``{guild.booster_count.format}``     | Returns the amount of people boosting in ordinal format|
-| ``{guild.boost_tier}``               | Returns guilds boost level                             |
-| ``{guild.vanity}``                   | Returns the guilds vanity                              |
+## User Variables
+User variables are also useful in areas such as welcome but can also be used in other areas such as invoked messages.
 
-## Invoke Related Variables:
+| Variable                        | Output                                    | Example                        |
+|----------------------------|-----------------------------------------|-------------------------------------- |
+| `{user}`                   | Shows user full name with discriminator  | `66adam#0`                           |
+| `{user.name}`              | Shows user's username                    | `66adam`                             |
+| `{user.discriminator}`     | Shows user's discriminator               | `#0`                                 |
+| `{user.id}`                | Shows user's id                          | `123456789012345678`                 |
+| `{user.mention}`           | Mentions the user                        | `@66adam`                            |
+| `{user.avatar}`            | Shows user's avatar                      | `https://example.com/avatar.png`     |
+| `{user.created_at}`        | Shows the user's account creation date   | `2020-05-01`                         |
+| `{user.joined_at}`         | Shows the user's join date               | `2021-06-15`                         |
 
-| Variable                             | Output                                                 |
-| ------------------------------------ | ------------------------------------------------------ |
-| ``{member.name}``                    | Returns members name                                   |
-| ``{member.mention}``                 | Returns member mention                                 |
-| ``{member.id}``                      | Returns member ID                                      |
-| ``{member.avatar}``                  | Returns members avatar                                 |
-| ``{reason}``                         | Returns the action reason, if any                      |
+# Social Variables
+Variables that can be used for their specific category/social.
 
-## LastFM Related Variables:
+<Note>We will be adding the rest of the socials later on.</Note>
+<Warning>These variables can ONLY be used in their specific social command, for example tiktok variables cannot be used in twitter.</Warning>
 
-| Variable                             | Output                                                 |
-| ------------------------------------ | ------------------------------------------------------ |
-| ``{scrobbles}``                      | Returns all song play count                            |
-| ``{trackplays}``                     | Returns the track total plays                          |
-| ``{artistplays}``                    | Returns the artist total plays                         |
-| ``{albumplays}``                     | Returns the album total plays                          |
-| ``{track}``                          | Returns the track name                                 |
-| ``{trackurl}``                       | Returns the track url                                  |
-| ``{trackimage}``                     | Returns the track image                                |
-| ``{artist}``                         | Returns the artist name                                |
-| ``{artisturl}``                      | Returns the artist profile url                         | 
-| ``{album}``                          | Returns the album name                                 |
-| ``{albumurl}``                       | Returns the album url                                  |
-| ``{username}``                       | Returns your username                                  |
-| ``{useravatar}``                     | Returns users profile picture                          |
+<Tabs>
+  <Tab title="Twitch">
+    | Variable                        | Output                                    | Example                        |
+    |----------------------------|-----------------------------------------|-------------------------------------- |
+    | `{stream}`                 | The stream name                         | `Sanchovies`                          |
+    | `{guild}`                  | The guild name                          | `My Discord Server`                   |
+  </Tab>
+  <Tab title="Tiktok">
+    | Variable                        | Output                                    | Example                        |
+    |----------------------------|-----------------------------------------|-------------------------------------- |
+    | `{username}`               | The tiktok username                     | `@66adam`                             |
+    | `{full_name}`              |  The tiktok name                        | `adam`                                |
+    | `{avatar_url}`             |  The tiktok avatar                      | `https://r2.greed.best/greed.png`     |
+    | `{biography}`              |  The tiktok bio                         | `Hi, Im a bot`                        |
+  </Tab>
+</Tabs>
