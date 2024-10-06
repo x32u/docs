@@ -1,0 +1,61 @@
+---
+title: "Setting up welcome"
+description: "Setting up the channels and message for both welcome & leave events"
+icon: ""
+---
+
+<CardGroup cols={2}>
+  <Card title="Welcome setup" icon="shield" href="#creating-a-welcome-channel">
+    Create, edit and setup your welcome message & channels and truly customise
+    it to your needs making it unique to yourself.
+  </Card>
+  <Card
+    title="Leave setup"
+    icon="arrows-to-circle"
+    href="/server-config/leave-setup"
+  >
+    Create, edit and setup your leave message & channels and truly customise it
+    to your needs making it unique to yourself.
+  </Card>
+</CardGroup>
+
+<Tip>
+  When setting up help messages, you can use `embedsetup` to easily generate
+  scripts/codes that are compatible with Evict.
+</Tip>
+
+## Creating a welcome channel
+
+
+<Steps>
+  <Step title="Head over to your Discord Server">
+    Click on the Discord Server that you would like to setup welcome for using
+    Evict.
+  </Step>
+  <Step title="Create the channel">
+    Setup permissions for the channel with the desired name, for this example we
+    will be using `#welcome`
+  </Step>
+</Steps>
+
+## Creating an embed and setting the welcome channel
+
+<Steps>
+  <Step title="Creating the welcome embed">
+    Run the `;embedsetup` command while to create the welcome embed which you
+    can use variables with, for more information regarding variables:
+    [/resources/variables](/resources/variables)
+  </Step>
+  <Step title="Setup the welcome channel">
+    Run the `,welcome add` command which will give you further information, for this
+    example we'll run: `,welcome add #welcome {title: Welcome!} {author: {user.name}}`
+  </Step>
+</Steps>
+
+<Frame caption="Creating the welcome embed and setting it up">
+  <img src="/images/welcome/4.gif" />
+</Frame>
+<br />
+<Frame caption="Testing the functionality of the welcome embed">
+  <img src="/images/welcome/5.gif" />
+</Frame>
